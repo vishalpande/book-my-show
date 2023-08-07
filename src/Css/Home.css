@@ -3,7 +3,7 @@
   /* margin-top: 10vh; */
   margin: 30px auto;
   padding: 30px 30px 0px 30px;
-  background-color: #343635;
+  background-color: black;
   border-radius: 5px;
   color: #fff;
   box-shadow: 5px 5px 5px rgba(199, 207, 224, 0.699);
@@ -25,15 +25,15 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 25px;
-  color: rgb(173, 201, 201);
+  color: rgb(61, 193, 193);
   font-weight: bold;
-  background-color: rgb(11, 33, 85);
+  background-color: rgb(55, 60, 73);
   border: 2px solid rgb(4, 234, 255) ;
   position: relative;
 }
 
 .BN-btn:hover{
-  background-color: rgba(0, 17, 255, 0.188);
+  background-color: rgba(242, 15, 65, 0.692);
   color: #fff;
 }
 
