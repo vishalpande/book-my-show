@@ -1,6 +1,6 @@
 {
   "name": "book-my-show",
-  "homepage": "https://vishalpande.github.io/book-my-show", 
+  "homepage": "https://vishalpande.github.io/book-my-show",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
