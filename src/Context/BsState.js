@@ -31,7 +31,7 @@ const BsState = (props) => {
   const handlePostBooking = async () => {
     // Sending api request to backend with user selected movie, slot and seats to book movie.
     const response = await fetch(
-      `https://bookmyshow-api.onrender.com/api/booking`,
+      `https://bookmyshow-backend-7wzv.onrender.com/api/booking`,
       {
         method: "POST",
         headers: {
@@ -69,7 +69,7 @@ const BsState = (props) => {
   //handle get request to get the last booking details from backend
   const handleGetLastBooking = async () => {
     const response = await fetch(
-      `https://bookmyshow-api.onrender.com/api/booking`,
+      `https://bookmyshow-backend-7wzv.onrender.com/api/booking`,
       {
         method: "GET",
       }
