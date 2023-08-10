@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import BsContext from "./BsContext";
 
 const BsState = (props) => {
-  
   const [errorPopup, setErrorPopup] = useState(false);
 
   //error message
@@ -11,10 +10,8 @@ const BsState = (props) => {
   // time slot which the user selects.
   const [time, changeTime] = useState("");
 
- 
   const [movie, changeMovie] = useState("");
 
-  // No of seats which the user selects.
   const [noOfSeat, changeNoOfSeats] = useState({
     A1: "",
     A2: "",
@@ -24,10 +21,8 @@ const BsState = (props) => {
     D2: "",
   });
 
-  // Last movie booking details.
   const [lastBookingDetails, setLastBookingDetails] = useState(null);
 
-  // handling post request to save booking details on the backend
   const handlePostBooking = async () => {
     // Sending api request to backend with user selected movie, slot and seats to book movie.
     const response = await fetch(
@@ -87,13 +82,13 @@ const BsState = (props) => {
     const slot = window.localStorage.getItem("slot");
     const seats = JSON.parse(window.localStorage.getItem("seats"));
 
-    if(movie){
+    if (movie) {
       changeMovie(movie);
     }
-    if(slot){
+    if (slot) {
       changeTime(slot);
     }
-    if(seats){
+    if (seats) {
       changeNoOfSeats(seats);
     }
   }, []);
@@ -115,7 +110,8 @@ const BsState = (props) => {
         setErrorPopup,
         errorMessage,
         setErrorMessage,
-      }}>
+      }}
+    >
       {props.children}
     </BsContext.Provider>
   );
