@@ -7,7 +7,7 @@ function Modal(props) {
   const context = useContext(BsContext);
   const { errorPopup, errorMessage, setErrorPopup, setErrorMessage } = context;
 
-  //setting errorPopup to false and errorMessage to "" on close modal
+ 
   const handleClosePopup = () => {
     setErrorMessage("");
     setErrorPopup(false);
