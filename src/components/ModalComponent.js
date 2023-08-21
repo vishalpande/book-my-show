@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import BsContext from "../Context/BsContext";
 import "../Css/ModalComponent.css";
 
-// Modal which takes two props (heading and message), this is called using function showMsg of context.
+// Modal which takes two props (heading and message), this is called using function showMsg of context..
 function Modal(props) {
   const context = useContext(BsContext);
   const { errorPopup, errorMessage, setErrorPopup, setErrorMessage } = context;
